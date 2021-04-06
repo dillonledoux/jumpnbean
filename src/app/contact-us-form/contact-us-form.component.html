@@ -1,0 +1,38 @@
+<h3>Contact Us</h3>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" >
+    <p>
+        <label>Name:</label>
+        <input type="text" formControlName="name">
+    </p>
+    <p>
+        <label>Email:</label>
+        <input type="email" placeholder="your email address" formControlName="email" required>
+        
+    </p>
+    <p>
+        <label>Phone:</label>
+        <input type="tel" id="phone" placeholder="XXX-XXX-XXXX" formControlName="phone" required >
+    </p>
+    <p>
+        <label>City:</label>
+        <input type="text" placeholder="your city" formControlName="city" required>
+        
+    </p>
+    <p>
+        <label>Description:</label>
+        <textarea placeholder="What would you like more information about?" formControlName="description" required></textarea>
+        
+    </p>
+    
+    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+        <div *ngIf="email.errors.required">
+            Email is required.
+        </div>
+        <div *ngIf="email.errors.email && email.touched">
+            Please provide a valid email address.
+        </div>
+    </div>
+    <p>
+        <button type="submit" [disabled]="!form.valid" >Submit</button>
+    </p>
+</form>
