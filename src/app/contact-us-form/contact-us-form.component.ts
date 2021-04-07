@@ -16,7 +16,7 @@ export class ContactUsFormComponent implements OnInit {
     this.form = new FormGroup({
       "name": new FormControl("", [Validators.required]),
       "email": new FormControl("", [Validators.required, Validators.email]),
-      "phone": new FormControl("", [Validators.required, Validators.pattern('[0-9]{3}-[0-9]{3}-[0-9]{4}')]),
+      "phone": new FormControl("", [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]),
       "city": new FormControl("", [Validators.required]),
       "description": new FormControl("", [Validators.required])
     });
@@ -33,6 +33,9 @@ export class ContactUsFormComponent implements OnInit {
   }
   get city(){
     return this.form.get('city');
+  }
+  get description(){
+    return this.form.get('description');
   }
 
   onSubmit(): void {
