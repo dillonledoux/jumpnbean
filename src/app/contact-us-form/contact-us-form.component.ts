@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PostService } from '../post.service';
+
+import { Contact } from '../contact';
+
 
 @Component({
   selector: 'app-contact-us-form',
@@ -9,10 +13,15 @@ import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } 
 export class ContactUsFormComponent implements OnInit {
 
   form:FormGroup;
+  newContact:Contact;
+  submission:boolean;
+  success:string;
 
-  constructor() { }
+  constructor(private postService:PostService) { }
 
   ngOnInit(): void {
+    this.success = `{"result": "Success."}`;
+
     this.form = new FormGroup({
       "name": new FormControl("", [Validators.required]),
       "email": new FormControl("", [Validators.required, Validators.email]),
@@ -39,10 +48,22 @@ export class ContactUsFormComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log("form submitted!");
-    console.log("Name" + this.form.controls.name.value);
-    console.log("email" + this.form.controls.email.value);
-    console.log(this.form);
+    this.newContact = new Contact(this.form.controls.name.value, this.form.controls.email.value, this.form.controls.phone.value, this.form.controls.city.value, this.form.controls.description.value);
+    console.log(this.newContact);
+
+    this.postService.contactUsPost(this.newContact).subscribe(data => {
+      //console.log(data);
+      
+      if(data == null || data.errorType ){
+        this.submission = false
+      }
+      else{
+        this.submission = true;
+      }
+      //console.log(this.submission);
+    });
+
+    
   }
 
 }
