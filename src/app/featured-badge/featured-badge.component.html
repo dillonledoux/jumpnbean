@@ -1,3 +1,6 @@
 <div>
-    <img src="https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg" alt="featured product">
+    <a routerLink="{{item.link}}">
+        <img src={{item.photo}} alt="featured product">
+    </a>
+    <h3>{{item.name}}</h3>
 </div>

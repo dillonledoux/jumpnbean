@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PostService } from '../post.service';
 
-import { Contact } from '../contact';
+import { Contact } from '../types/contact';
 
 
 @Component({

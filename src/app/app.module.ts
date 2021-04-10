@@ -10,7 +10,6 @@ import { ContactUsFormComponent } from './contact-us-form/contact-us-form.compon
 import { ProductCardComponent } from './product-card/product-card.component';
 import { HeaderComponent } from './header/header.component';
 import { FeaturedComponent } from './sections/featured/featured.component';
-import { ContactComponent } from './sections/contact/contact.component';
 import { AboutComponent } from './sections/about/about.component';
 import { HeadlineComponent } from './sections/headline/headline.component';
 import { BenefitsComponent } from './sections/benefits/benefits.component';
@@ -25,7 +24,6 @@ import { FeaturedBadgeComponent } from './featured-badge/featured-badge.componen
     ProductCardComponent,
     HeaderComponent,
     FeaturedComponent,
-    ContactComponent,
     AboutComponent,
     HeadlineComponent,
     BenefitsComponent,

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FeaturedItem } from '../types/FeaturedItem';
 
 @Component({
   selector: 'app-featured-badge',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedBadgeComponent implements OnInit {
 
+  @Input() item:FeaturedItem;
+  
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
