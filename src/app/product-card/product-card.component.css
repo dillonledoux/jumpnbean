@@ -1,0 +1,37 @@
+.product-card {
+    max-width: 400px;
+}
+
+.display-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.product-metrics {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 6px 0px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.text-content {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.product-title {
+    padding-bottom: 7px;
+    color: #7FA128;
+}
+.buttons-container {
+    text-align: center;
+    
+}
+.view-button {
+    background-color: black;
+    border-radius: 25px;
+
+}

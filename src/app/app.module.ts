@@ -16,6 +16,10 @@ import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { ProductComponent } from './pages/product/product.component';
 import { FeaturedBadgeComponent } from './featured-badge/featured-badge.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { FeaturedBadgeComponent } from './featured-badge/featured-badge.componen
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
