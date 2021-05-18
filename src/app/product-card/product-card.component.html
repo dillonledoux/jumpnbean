@@ -1,12 +1,14 @@
 <div class="product-card">
     <div class="content-container">
         <div class="product-pic">
-            <img src="https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg" alt="">
+            <img src={{flower.photo}} alt="">
         </div>
         <div class="product-info">
-            <h3 class="product-title">MARSHMELLOW OG</h3>
-            <h4 class="product-details">THC: 18.8% | CBD: 00.0% | CANNABOIDS: 22.7%</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            <h3 class="product-title">{{flower.name}}</h3>
+            <h4 class="product-stats">THC: {{flower.thc}}% | CBD: {{flower.cbd}}% | CANNABOIDS: {{flower.cannaboids}}%</h4>
+            <div class="product-blurb">
+                <p>{{flower.info}}</p>
+            </div>
             <div class="product-bottom-container">
                 <a class="view-product-link" href="">VIEW PRODUCT</a>
             </div>

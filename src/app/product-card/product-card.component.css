@@ -18,7 +18,7 @@
     text-transform: uppercase;
 }
 
-.product-details {
+.product-stats {
     font-size: 0.7rem;
     border-top: solid black 2px;
     border-bottom: solid black 2px;
@@ -42,8 +42,12 @@
     padding-bottom: 5px;
 }
 
+.product-blurb {
+    width: 100%;
+    height: 150px;
+}
 
-.product-info p {
+.product-blurb p {
     font-size: 0.8rem;
     line-height: 22px;
     margin-bottom: 35px;
