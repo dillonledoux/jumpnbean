@@ -1,6 +1,9 @@
 .product-grid{
     display: flex;
     flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 950px;
 }
 .card{
     padding: 10px;
