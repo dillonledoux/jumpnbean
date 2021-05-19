@@ -14,7 +14,7 @@ import { AboutComponent } from './sections/about/about.component';
 import { HeadlineComponent } from './sections/headline/headline.component';
 import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AllProductsComponent } from './all-products/all-products.component';
-import { ProductComponent } from './pages/product/product.component';
+import { AllProductsPageComponent } from './pages/product/all-products-page.component';
 import { FeaturedBadgeComponent } from './featured-badge/featured-badge.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
@@ -32,7 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
     HeadlineComponent,
     BenefitsComponent,
     AllProductsComponent,
-    ProductComponent,
+    AllProductsPageComponent,
     FeaturedBadgeComponent
   ],
   imports: [

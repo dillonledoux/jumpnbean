@@ -1,0 +1,25 @@
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.product-category {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 950px;
+}
+.card {
+    padding: 10px;
+}

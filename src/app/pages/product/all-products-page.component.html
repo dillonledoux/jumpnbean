@@ -1,0 +1,11 @@
+<div class="main-container">
+    <h2 class="product-category">FLOWERS</h2> 
+    <!-- figure out how to make flowers a horizontal block -->
+    <div class="product-grid">
+        <app-product-card 
+            class="card"
+            *ngFor="let item of items" 
+            [flower]="item">
+        </app-product-card>
+    </div> 
+</div>
