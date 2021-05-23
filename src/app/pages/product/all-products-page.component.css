@@ -1,14 +1,41 @@
-.main-container {
+.content-container {
     display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 5vw 5vw;
-    
+    width: 90vw;
+    height: auto;
     flex-direction: column;
+    max-width: 1020px;
+}
+
+.headline-text-block{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.headline-text-block p{
+    padding-left: 5px;
+}
+
+
+.page-title {
+    font-size: 5em;
+}
+
+.all-product-page-headline {
+    margin-bottom: 25px;
+}
+
+.all-product-page-headline-photo img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 .product-category {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     max-height: 30px;
@@ -20,8 +47,7 @@
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 950px;
+    justify-content: space-evenly;
     margin-top: auto;
 }
 .card {

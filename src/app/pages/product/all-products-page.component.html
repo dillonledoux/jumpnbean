@@ -1,11 +1,24 @@
-<div class="main-container">
-    <h2 class="product-category">FLOWERS</h2> 
-    <!-- figure out how to make flowers a horizontal block -->
-    <div class="product-grid">
-        <app-product-card 
-            class="card"
-            *ngFor="let item of items" 
-            [flower]="item">
-        </app-product-card>
-    </div> 
+<div class="main-page-container">
+    
+    <div class="content-container">
+        <div class="all-product-page-headline">
+            <div class="all-product-page-headline-photo">
+                <img src="https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG">
+                
+            </div>
+            <div class="headline-text-block">
+                <h2 class='page-title'>PRODUCTS</h2>
+                <p class="all-product-page-description">lorem ipsum</p>
+            </div>
+
+        </div>
+        <h2 class="product-category">FLOWERS</h2> 
+        <div class="product-grid">
+            <app-product-card 
+                class="card"
+                *ngFor="let item of items" 
+                [flower]="item">
+            </app-product-card>
+        </div> 
+    </div>
 </div>
