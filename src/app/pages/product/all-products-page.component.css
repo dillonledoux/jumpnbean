@@ -2,15 +2,18 @@
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    flex-direction: row;
+    padding: 5vw 5vw;
+    
+    flex-direction: column;
 }
 
 .product-category {
+    font-size: 3rem;
     color: white;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    border: 1px solid white;
+    max-height: 30px;
+    margin-top: auto;
+    padding-left: 10px;
 }
 
 .product-grid {
@@ -19,6 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 950px;
+    margin-top: auto;
 }
 .card {
     padding: 10px;
