@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { MatButtonModule } from '@angular/material/button';
     BenefitsComponent,
     AllProductsComponent,
     AllProductsPageComponent,
-    FeaturedBadgeComponent
+    FeaturedBadgeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatCardModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
