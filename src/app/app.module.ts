@@ -15,13 +15,14 @@ import { AboutComponent } from './sections/about/about.component';
 import { HeadlineComponent } from './sections/headline/headline.component';
 import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AllProductsComponent } from './all-products/all-products.component';
-import { AllProductsPageComponent } from './pages/product/all-products-page.component';
+import { AllProductsPageComponent } from './pages/product/all-products/all-products-page.component';
 import { FeaturedBadgeComponent } from './featured-badge/featured-badge.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
+import { ProductDetailsPageComponent } from './pages/product/details/product-details-page/product-details-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FooterComponent } from './footer/footer.component';
     AllProductsComponent,
     AllProductsPageComponent,
     FeaturedBadgeComponent,
-    FooterComponent
+    FooterComponent,
+    ProductDetailsPageComponent,
   ],
   imports: [
     BrowserModule,
