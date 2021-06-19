@@ -48,6 +48,13 @@ export const PRODUCTS: Product[] = [
         cannaboids: 10.1,
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg'
+    },
+    {
+        name: 'Stinky OG',
+        thc: 11.2,
+        cbd: 4.5,
+        cannaboids: 10.1,
+        info: 'lorem ipsum...',
+        photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg'
     }
-
 ];

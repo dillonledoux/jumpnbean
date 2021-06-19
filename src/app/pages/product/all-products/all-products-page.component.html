@@ -1,5 +1,5 @@
+<app-header></app-header>
 <div class="main-page-container">
-    
     <div class="content-container">
         <div class="all-product-page-headline">
             <div class="all-product-page-headline-photo"></div>
@@ -16,6 +16,10 @@
                 *ngFor="let item of items" 
                 [flower]="item">
             </app-product-card>
-        </div> 
+        </div>
+
     </div>
+    
 </div>
+<app-contact-us-block [info]="'REQUEST INFORMATION ON THIS PRODUCT'"></app-contact-us-block>
+<app-footer></app-footer>

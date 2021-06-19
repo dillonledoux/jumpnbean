@@ -1,0 +1,13 @@
+.contact-us-block-container{
+    background-color: chocolate;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: auto;
+}
+.contact-us-block-item{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}

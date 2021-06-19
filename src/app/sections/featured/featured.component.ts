@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FeaturedItem } from '../../types/FeaturedItem';
+import { FeaturedItem } from '../../models/FeaturedItem';
 
 @Component({
   selector: 'app-featured',
