@@ -1,5 +1,6 @@
 .contact-us-block-container{
-    background-color: chocolate;
+    background-image: url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
+    background-size: cover;
     padding: 10px 50px;
     display: flex;
     flex-direction: row;
@@ -8,6 +9,13 @@
 .contact-us-block-item{
     display: flex;
     width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
     align-items: center;
     justify-content: center;
+}
+.contact-us-block-item > h2{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
