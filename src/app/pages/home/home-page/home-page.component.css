@@ -1,0 +1,52 @@
+.content-container {
+    display: flex;
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+    max-width: 1020px;
+}
+
+.headline-text-block{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.headline-text-block p{
+    padding-left: 5px;
+}
+
+.home-page-title {
+    width: auto;
+    height: 7vw;
+    margin: 15px 0px;
+}
+.home-page-headline-photo{
+    width: 100%;
+    height: 450px;
+    /* box-shadow: 30px 0 200px 60px inset black; */
+    background-image: url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
+    background-size: cover;  
+}
+
+a:hover {
+    color: #7FA128;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+.view-products-link {
+    padding: 7px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 25px;
+}
+

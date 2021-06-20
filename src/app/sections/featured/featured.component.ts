@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FeaturedItem } from '../../models/FeaturedItem';
+import { FEATURED_ITEMS } from '../../data/featured-products';
 
 @Component({
   selector: 'app-featured',
@@ -10,14 +11,10 @@ export class FeaturedComponent implements OnInit {
 
   constructor() { }
 
-  item:FeaturedItem;
+  items : FeaturedItem[];
 
   ngOnInit(): void {
-    this.item = new FeaturedItem(
-      "https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg",
-      "test",
-      "candy corn"
-    );
+    this.items = FEATURED_ITEMS;
   }
 
 }

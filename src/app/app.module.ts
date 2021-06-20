@@ -12,7 +12,6 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { HeaderComponent } from './header/header.component';
 import { FeaturedComponent } from './sections/featured/featured.component';
 import { AboutComponent } from './sections/about/about.component';
-import { HeadlineComponent } from './sections/headline/headline.component';
 import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AllProductsPageComponent } from './pages/product/all-products/all-products-page.component';
 import { FeaturedBadgeComponent } from './featured-badge/featured-badge.component';
@@ -23,7 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsPageComponent } from './pages/product/details/product-details-page/product-details-page.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
-import { ContactUsBlockComponent } from './contact-us-block/contact-us-block.component';
+import { ContactUsBlockComponent } from './sections/contact-us-block/contact-us-block.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +32,6 @@ import { ContactUsBlockComponent } from './contact-us-block/contact-us-block.com
     HeaderComponent,
     FeaturedComponent,
     AboutComponent,
-    HeadlineComponent,
     BenefitsComponent,
     AllProductsPageComponent,
     FeaturedBadgeComponent,

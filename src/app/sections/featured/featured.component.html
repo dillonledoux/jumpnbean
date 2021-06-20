@@ -1,4 +1,9 @@
-<app-featured-badge 
-[item]="item"
-></app-featured-badge>
+<h2 class="featured-products-headline">FEATURED PRODUCTS</h2>
+<div class="featured-badge-row">
+    <app-featured-badge 
+        *ngFor="let item of items" 
+        [item]="item">
+    </app-featured-badge>
+</div>
+
 
