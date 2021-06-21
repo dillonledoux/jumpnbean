@@ -1,0 +1,29 @@
+.terps-section-container{
+    margin: 20px 0px;
+    color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.terps-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw;
+    height: 100%;
+}
+.terps-section-text h2{
+    font-size: 4vw;
+}
+.terps-section-photo{
+    height: 100%;
+}
+.terps-section-photo img{
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    max-width: 50vw;
+}

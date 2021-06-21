@@ -23,6 +23,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsPageComponent } from './pages/product/details/product-details-page/product-details-page.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
 import { ContactUsBlockComponent } from './sections/contact-us-block/contact-us-block.component';
+import { BenefitItemComponent } from './benefit-item/benefit-item.component';
+import { TerpsComponent } from './sections/terps/terps.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { ContactUsBlockComponent } from './sections/contact-us-block/contact-us-
     ProductDetailsPageComponent,
     HomePageComponent,
     ContactUsBlockComponent,
+    BenefitItemComponent,
+    TerpsComponent,
   ],
   imports: [
     BrowserModule,

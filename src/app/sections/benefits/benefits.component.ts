@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BENEFIT_ITEMS } from '../../data/benefit-items'
+
 
 @Component({
   selector: 'app-benefits',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./benefits.component.css']
 })
 export class BenefitsComponent implements OnInit {
+
+  readonly benefit_items = BENEFIT_ITEMS;
 
   constructor() { }
 

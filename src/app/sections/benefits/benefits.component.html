@@ -1,1 +1,7 @@
-<p>benefits works!</p>
+<div class="benefit-section-container">
+    <!-- <app-benefit-item></app-benefit-item> -->
+    <app-benefit-item
+        *ngFor="let item of benefit_items" 
+        [item_info]="item">
+    </app-benefit-item>
+</div>

@@ -1,0 +1,14 @@
+.benefit-section-container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: white solid 2px;
+    padding: 20px 0px;
+}
+app-benefit-item:nth-last-child(2){
+    border-right: solid white 1px;
+}
