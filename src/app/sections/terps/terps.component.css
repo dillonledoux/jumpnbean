@@ -1,8 +1,8 @@
 .terps-section-container{
     margin: 20px 0px;
     color: white;
-    height: 300px;
-    width: 100%;
+    /* height: 300px; */
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
     align-items: center;
