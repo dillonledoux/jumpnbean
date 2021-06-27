@@ -25,6 +25,7 @@ import { HomePageComponent } from './pages/home/home-page/home-page.component';
 import { ContactUsBlockComponent } from './sections/contact-us-block/contact-us-block.component';
 import { BenefitItemComponent } from './benefit-item/benefit-item.component';
 import { TerpsComponent } from './sections/terps/terps.component';
+import { HeadlineComponent } from './sections/headline/headline.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { TerpsComponent } from './sections/terps/terps.component';
     ContactUsBlockComponent,
     BenefitItemComponent,
     TerpsComponent,
+    HeadlineComponent,
   ],
   imports: [
     BrowserModule,

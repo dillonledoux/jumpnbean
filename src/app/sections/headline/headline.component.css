@@ -1,0 +1,72 @@
+.home-page-headline{
+    width: 100%;
+    height: 450px;
+}
+
+.headline-text-block{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-end;
+    width: 100%;
+    height: auto;    
+    text-align: left;
+    padding-left: 10%;
+}
+
+.headline-text-block p{
+    padding-left: 5px;
+}
+
+.home-page-title {
+    width: 55%;
+    min-width: 240px;
+    height: 30%;
+    margin-bottom: 3%;
+
+}
+.home-page-title img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.home-page-description{
+    width: 50%;
+    padding-right: 10%;
+    margin-bottom: 3%;
+}
+
+@media(max-width:400px){
+    .home-page-description{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.home-page-headline-photo{
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 30px 0 200px 60px inset black; */
+    background-image: url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
+    background-size: cover;  
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    color: #7FA128;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+.headline-view-products-link {
+    padding: 7px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 25px;
+}
