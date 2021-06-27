@@ -1,15 +1,23 @@
 .featured-product-container{
-    width: 20vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 5px;
 }
-img {
-    width: 18vw;
-    height: 18vw;
+.featured-product-image-badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.featured-product-image-badge img {
+    max-width: 85%;
     border-radius: 50%;
-    border: 0.5vw solid white;
+    border: 3px solid white;
     transition: transform 250ms;
 }
 img:hover {

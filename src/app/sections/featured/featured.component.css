@@ -10,3 +10,14 @@
     margin-left: 2.5vw;
     margin-top: 4vw;
 }
+.featured-badge-item{
+    width: 20%;
+    flex: 30%;
+    padding: 0 10px;
+}
+
+@media(max-width:450px){
+    .featured-badge-row{
+        flex-wrap: wrap;
+    }
+}

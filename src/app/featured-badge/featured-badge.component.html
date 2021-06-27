@@ -1,6 +1,8 @@
 <div class="featured-product-container">
-    <a routerLink="{{item.link}}">
-        <img src={{item.photo}} alt="featured product">
-    </a>
+        <a routerLink="{{item.link}}">
+            <div class="featured-product-image-badge">
+                <img src={{item.photo}} alt="featured product">
+            </div>
+        </a>
     <h3 class="featured-badge-label">{{item.name}}</h3>
 </div>
