@@ -1,7 +1,7 @@
 <div class="home-page-headline">
     <div class="home-page-headline-photo">
         <div class="headline-text-block">
-            <div *ngIf="!bigHeadlineText" class = 'home-page-title'>
+            <div *ngIf="(!bigHeadlineText && !logoVisible)" class = 'home-page-title'>
                 <img src="https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/Jump-n-bean%20pharms-2.png">
             </div>
             <h1 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h1>

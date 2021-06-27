@@ -1,1 +1,17 @@
-<p>product-details-page works!</p>
+<app-header></app-header>
+<div class="details-page-container">
+    <div class="details-page-headline">
+        <div class="details-page-headline-photo"></div>
+    </div>
+    <div class="details-page-title-text">
+        <div class="details-page-name-thc">
+            <span>{{ item.name | uppercase }}</span>
+            <div>THC: {{ item.thc }}%</div>
+        </div>
+        <div class="details-page-cbd-canna">
+            <span class="cbd-span">CBD: {{ item.cbd }}</span>
+            <span class="canna-span"> CANNABINOIDS: {{ item.cannaboids }}%</span>
+        </div>
+    </div>
+</div>
+

@@ -10,6 +10,7 @@ export class HeadlineComponent implements OnInit {
   @Input() bigHeadlineText: string;
   @Input() subtitleText: string;
   @Input() viewProductLinkVisible: boolean;
+  @Input() logoVisible: boolean;
   
   constructor() { }
 

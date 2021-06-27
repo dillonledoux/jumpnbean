@@ -16,5 +16,4 @@ export class AllProductsPageComponent implements OnInit {
   ngOnInit(): void {
     this.items = PRODUCTS;
   }
-
 }

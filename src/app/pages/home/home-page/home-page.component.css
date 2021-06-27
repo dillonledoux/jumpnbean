@@ -1,12 +1,10 @@
 .home-page-container {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
 }
 .home-page-content-container {
     display: flex;
     flex-direction: column;
-    max-width: 1020px;
+    max-width: 1024px;
 }
-

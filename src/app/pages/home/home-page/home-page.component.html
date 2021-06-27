@@ -1,7 +1,11 @@
 <app-header></app-header>
 <div class="home-page-container">
     <div class="home-page-content-container">
-        <app-headline></app-headline>
+        <app-headline 
+            [logoVisible]="true"
+            [subtitleText]="'Blah blah blah'"
+            [viewProductLinkVisible]="true"
+        ></app-headline>
         <app-featured></app-featured>
         <app-about></app-about>
         <app-benefits></app-benefits>
