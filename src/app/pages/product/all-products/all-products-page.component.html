@@ -1,14 +1,19 @@
 <app-header></app-header>
 <div class="main-page-container">
     <div class="content-container">
-        <div class="all-product-page-headline">
+        <!-- <div class="all-product-page-headline">
             <div class="all-product-page-headline-photo"></div>
             <div class="headline-text-block">
                 <h2 class='page-title'>PRODUCTS</h2>
                 <p class="all-product-page-description">lorem ipsum</p>
-            </div>
+            </div> 
 
-        </div>
+        </div>-->
+        <app-headline 
+            [viewProductLinkVisible]="false"
+            [bigHeadlineText]="'PRODUCTS'"
+            [subtitleText]="'blah blah blah blah'"
+        ></app-headline>
         <h2 class="product-category">FLOWERS</h2> 
         <div class="product-grid">
             <app-product-card 

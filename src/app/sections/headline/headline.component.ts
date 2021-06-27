@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-headline',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadlineComponent implements OnInit {
 
+  @Input() bigHeadlineText: string;
+  @Input() subtitleText: string;
+  @Input() viewProductLinkVisible: boolean;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
