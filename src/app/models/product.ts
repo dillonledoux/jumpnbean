@@ -5,4 +5,6 @@ export class Product{
     cannaboids: number;
     info: string;
     photo: string;
+    aromas: string[];
+    terpenes: number;
 }

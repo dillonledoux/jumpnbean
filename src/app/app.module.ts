@@ -26,6 +26,7 @@ import { ContactUsBlockComponent } from './sections/contact-us-block/contact-us-
 import { BenefitItemComponent } from './benefit-item/benefit-item.component';
 import { TerpsComponent } from './sections/terps/terps.component';
 import { HeadlineComponent } from './sections/headline/headline.component';
+import { AromaIconComponent } from './aroma-icon/aroma-icon.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { HeadlineComponent } from './sections/headline/headline.component';
     BenefitItemComponent,
     TerpsComponent,
     HeadlineComponent,
+    AromaIconComponent,
   ],
   imports: [
     BrowserModule,

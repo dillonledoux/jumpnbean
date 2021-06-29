@@ -1,17 +1,40 @@
 <app-header></app-header>
-<div class="details-page-container">
-    <div class="details-page-headline">
-        <div class="details-page-headline-photo"></div>
-    </div>
-    <div class="details-page-title-text">
-        <div class="details-page-name-thc">
-            <span>{{ item.name | uppercase }}</span>
-            <div>THC: {{ item.thc }}%</div>
+<div class="details-page-main-container">
+    <div class="details-page-content-container">
+        <div class="details-page-headline">
+            <div class="details-page-headline-photo"></div>
         </div>
-        <div class="details-page-cbd-canna">
-            <span class="cbd-span">CBD: {{ item.cbd }}</span>
-            <span class="canna-span"> CANNABINOIDS: {{ item.cannaboids }}%</span>
+        <div class="details-page-title-text">
+            <div class="details-page-name-thc">
+                <span>{{ item.name | uppercase }}</span>
+                <div>THC: {{ item.thc }}%</div>
+            </div>
+            <div class="details-page-cbd-canna">
+                <span class="cbd-span">CBD: {{ item.cbd }}</span>
+                <span class="canna-span"> CANNABINOIDS: {{ item.cannaboids }}%</span>
+            </div>
+        </div>
+        <div class="analyte-container">
+            <div class="analyte-photo">
+                <span>ANALYTE</span>
+            </div>
+            <div class="analyte-table">
+                <span>table here</span>
+            </div>
+        </div>
+        <div class="aromas-container">
+            <div class="aroma-title">
+                <span>PRIMARY AROMAS</span>
+            </div>
+            <div class="icons-row">
+                <div 
+                    class='aroma-icon'
+                    *ngFor="let aroma of item.aromas">
+                    <app-aroma-icon [aroma]="aroma"></app-aroma-icon>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 

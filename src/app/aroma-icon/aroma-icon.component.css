@@ -1,0 +1,19 @@
+.aroma-icon-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.aroma-icon-image{
+    display: flex;
+    justify-content: center;
+}
+.aroma-icon-image img{
+    max-width: 85%;
+    margin-bottom: 10px;
+}
+.aroma-icon-div span{
+    text-align: center;
+    font-size: 12px;
+}
