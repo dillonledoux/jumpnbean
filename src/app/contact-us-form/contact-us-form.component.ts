@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PostService } from '../post.service';
 
@@ -16,6 +16,7 @@ export class ContactUsFormComponent implements OnInit {
   newContact:Contact;
   submission:boolean;
   success:string;
+  @Input() product: string = "general request";
 
   constructor(private postService:PostService) { }
 
@@ -48,7 +49,7 @@ export class ContactUsFormComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.newContact = new Contact(this.form.controls.name.value, this.form.controls.email.value, this.form.controls.phone.value, this.form.controls.city.value, this.form.controls.description.value);
+    this.newContact = new Contact(this.form.controls.name.value, this.form.controls.email.value, this.form.controls.phone.value, this.form.controls.city.value, this.form.controls.description.value, this.product);
     console.log(this.newContact);
 
     this.postService.contactUsPost(this.newContact).subscribe(data => {
@@ -62,8 +63,6 @@ export class ContactUsFormComponent implements OnInit {
       }
       //console.log(this.submission);
     });
-
-    
   }
 
 }

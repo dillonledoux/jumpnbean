@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ContactUsBlockComponent implements OnInit {
 
   @Input() info : string = "Contact Us";
+  @Input() product_name : string;
 
   constructor() { }
 

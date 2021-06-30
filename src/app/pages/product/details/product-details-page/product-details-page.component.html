@@ -48,7 +48,10 @@
         </div>
     </div>
 </div>
-<app-contact-us-block [info]="'REQUEST INFORMATION ON THIS PRODUCT'"></app-contact-us-block>
+<app-contact-us-block 
+    [info]="'REQUEST INFORMATION ON ' + item.name.toUpperCase()"
+    [product_name] = 'item.name'>
+</app-contact-us-block>
 <app-footer></app-footer>
 
 
