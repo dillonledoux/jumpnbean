@@ -26,15 +26,29 @@
             <div class="aroma-title">
                 <span>PRIMARY AROMAS</span>
             </div>
-            <div class="icons-row">
-                <div 
+            <div class="icons-row">    
+                <app-aroma-icon
                     class='aroma-icon'
-                    *ngFor="let aroma of item.aromas">
-                    <app-aroma-icon [aroma]="aroma"></app-aroma-icon>
+                    *ngFor="let aroma of item.aromas"
+                    [aroma]="aroma">
+                </app-aroma-icon>
+                <div class="total-terps-text">
+                    <p>{{item.terpenes | number}} PPM</p>
+                    <p>TOTAL TERPENES</p>
                 </div>
+            </div>
+        </div>
+        <div class="terps-chart-container">
+            <div class="terps-chart-title">
+                <span>TERPENES</span>
+            </div>
+            <div class="terps-chart-table">
+                <span>table here</span>
             </div>
         </div>
     </div>
 </div>
+<app-contact-us-block [info]="'REQUEST INFORMATION ON THIS PRODUCT'"></app-contact-us-block>
+<app-footer></app-footer>
 
 

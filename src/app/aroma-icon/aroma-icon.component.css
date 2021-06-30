@@ -10,8 +10,11 @@
     justify-content: center;
 }
 .aroma-icon-image img{
-    max-width: 85%;
+    height:6vw;
+    min-height: 30px;
+    max-height: 75px;
     margin-bottom: 10px;
+
 }
 .aroma-icon-div span{
     text-align: center;
