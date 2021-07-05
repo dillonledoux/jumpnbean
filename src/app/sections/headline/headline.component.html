@@ -6,7 +6,7 @@
             </div>
             <h1 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h1>
             <p class="home-page-description">{{subtitleText}}</p>
-            <a *ngIf="viewProductLinkVisible" class="headline-view-products-link" href="">VIEW PRODUCTS</a>
+            <a *ngIf="viewProductLinkVisible" class="headline-view-products-link" routerLink="/products" routerLinkActive="active">VIEW PRODUCTS</a>
         </div>
     </div>
 </div>
