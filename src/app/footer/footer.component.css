@@ -54,6 +54,13 @@
     padding-left: 8px;
     padding-right: 8px;
 }
-a:visited {
+.ng-fa-icon{
     color: white;
+
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
 }
