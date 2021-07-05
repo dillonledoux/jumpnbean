@@ -1,9 +1,13 @@
+.main-page-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
 .content-container {
     display: flex;
-    width: 90vw;
     height: auto;
     flex-direction: column;
-    max-width: 1020px;
+    max-width: 1024px;
 }
 
 .headline-text-block{

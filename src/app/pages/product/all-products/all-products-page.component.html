@@ -1,14 +1,6 @@
 <app-header></app-header>
 <div class="main-page-container">
     <div class="content-container">
-        <!-- <div class="all-product-page-headline">
-            <div class="all-product-page-headline-photo"></div>
-            <div class="headline-text-block">
-                <h2 class='page-title'>PRODUCTS</h2>
-                <p class="all-product-page-description">lorem ipsum</p>
-            </div> 
-
-        </div>-->
         <app-headline 
             [viewProductLinkVisible]="false"
             [bigHeadlineText]="'PRODUCTS'"
@@ -22,9 +14,7 @@
                 [flower]="item">
             </app-product-card>
         </div>
-
+        <app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
+        <app-footer></app-footer>
     </div>
-    
 </div>
-<app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
-<app-footer></app-footer>
