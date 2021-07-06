@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PostService } from '../post.service';
+import { MAT_FORM_FIELD, MatFormField, MatFormFieldControl } from '@angular/material/form-field';
 
 import { Contact } from '../models/contact';
 
@@ -18,7 +19,7 @@ export class ContactUsFormComponent implements OnInit {
   success:string;
   @Input() product: string = "general request";
 
-  constructor(private postService:PostService) { }
+  constructor( private postService:PostService ) { }
 
   ngOnInit(): void {
     this.success = `{"result": "Success."}`;

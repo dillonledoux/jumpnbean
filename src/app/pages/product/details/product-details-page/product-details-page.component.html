@@ -19,7 +19,16 @@
                 <span>ANALYTE</span>
             </div>
             <div class="analyte-table">
-                <span>table here</span>
+                <div class="terps-chart-wrapper">
+                    <canvas baseChart 
+                        [datasets]="analyteChartData"
+                        [labels]="analyteChartLabels"
+                        [options]="analyteChartOptions"
+                        [plugins]="analyteChartPlugins"
+                        [legend]="analyteChartLegend"
+                        [chartType]="analyteChartType">
+                  </canvas>
+                </div>
             </div>
         </div>
         <div class="aromas-container">
@@ -43,7 +52,16 @@
                 <span>TERPENES</span>
             </div>
             <div class="terps-chart-table">
-                <span>table here</span>
+                <div class="terps-chart-wrapper">
+                    <canvas baseChart 
+                        [datasets]="terpsChartData"
+                        [labels]="terpsChartLabels"
+                        [options]="terpsChartOptions"
+                        [plugins]="terpsChartPlugins"
+                        [legend]="terpsChartLegend"
+                        [chartType]="terpsChartType">
+                  </canvas>
+                </div>
             </div>
         </div>
     </div>
