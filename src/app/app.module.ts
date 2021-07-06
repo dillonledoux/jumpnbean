@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,8 +16,9 @@ import { BenefitsComponent } from './sections/benefits/benefits.component';
 import { AllProductsPageComponent } from './pages/product/all-products/all-products-page.component';
 import { FeaturedBadgeComponent } from './featured-badge/featured-badge.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsPageComponent } from './pages/product/details/product-details-page/product-details-page.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
@@ -55,8 +55,9 @@ import { AromaIconComponent } from './aroma-icon/aroma-icon.component';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MatDividerModule,
     MatButtonModule,
-    MatInputModule,
     FontAwesomeModule
   ],
   providers: [],
