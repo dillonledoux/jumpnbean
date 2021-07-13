@@ -1,16 +1,23 @@
-<app-header></app-header>
-<div class="home-page-container">
-    <div class="home-page-content-container">
-        <app-headline 
-            [logoVisible]="true"
-            [subtitleText]="'Blah blah blah'"
-            [viewProductLinkVisible]="true"
-        ></app-headline>
-        <app-featured></app-featured>
-        <app-about><a id="about"></a></app-about>
-        <app-benefits></app-benefits>
-        <app-terps></app-terps>
-        <app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
-        <app-footer></app-footer>
+<div *ngIf="ageVer.userIsVerified(); else elseBlock">
+    <app-header></app-header>
+    <div class="home-page-container">
+        <div class="home-page-content-container">
+            <app-headline 
+                [logoVisible]="true"
+                [subtitleText]="'Blah blah blah'"
+                [viewProductLinkVisible]="true"
+            ></app-headline>
+            <app-featured></app-featured>
+            <app-about><a id="about"></a></app-about>
+            <app-benefits></app-benefits>
+            <app-terps></app-terps>
+            <app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
+            <app-footer></app-footer>
+        </div>
     </div>
 </div>
+<ng-template #elseBlock>
+    <div>
+        <button (click)='ageVer.addVerificationCookie()'>I am 18+</button>
+    </div>
+</ng-template>

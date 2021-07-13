@@ -4,6 +4,7 @@ import { Product } from '../../../../models/product';
 import { PRODUCTS } from '../../../../data/product-data';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
+import { AgeVerificationService } from 'src/app/age-verification.service';
 
 @Component({
   selector: 'app-product-details-page',
@@ -54,6 +55,7 @@ export class ProductDetailsPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    public ageVer: AgeVerificationService
   ) {}
 
   ngOnInit(): void {

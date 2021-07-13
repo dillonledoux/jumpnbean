@@ -3,7 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class AgeVerificationServiceService {
+export class AgeVerificationService {
+
+  // constant cookie value for age verification
+  readonly COOKIE_VALUE = 'yes';
+  readonly COOKIE_NAME = 'AgeIsVerified';
 
   constructor() { }
 
@@ -43,10 +47,32 @@ export class AgeVerificationServiceService {
   }
 
   /**
+   * Checks the user's cookie store to see if they have been previously verified
+   * @returns true if the user has previously verified, false if not
+   */
+  userIsVerified(): boolean{
+    if(this.readCookie(this.COOKIE_NAME)){
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Adds cookie that verifies user has confirmed they are of age
+   */
+  addVerificationCookie(): void{
+    this.createCookie(this.COOKIE_NAME, this.COOKIE_VALUE, 30);
+  }
+
+  /**
    * erases a cookie
    * @param name cookie name to be erased
    */
   eraseCookie(name: string): void{
     this.createCookie(name, "", -1);
+  }
+
+  clearVerificationCookie(): void {
+    this.eraseCookie(this.COOKIE_NAME);
   }
 }

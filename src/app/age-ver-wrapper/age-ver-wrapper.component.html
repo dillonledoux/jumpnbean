@@ -1,0 +1,10 @@
+<div *ngIf="ageVer.userIsVerified(); else elseBlock">
+    VERIFIED!
+</div>
+<ng-template #elseBlock>
+    <div>
+        <button (click)='ageVer.addVerificationCookie()'>I am 18+</button>
+    </div>
+</ng-template>
+
+<button (click)='ageVer.clearVerificationCookie()'>Clear Cookie</button>

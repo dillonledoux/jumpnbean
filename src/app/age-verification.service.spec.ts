@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AgeVerificationServiceService } from './age-verification-service.service';
+import { AgeVerificationService } from './age-verification.service';
 
 describe('AgeVerificationServiceService', () => {
-  let service: AgeVerificationServiceService;
+  let service: AgeVerificationService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AgeVerificationServiceService);
+    service = TestBed.inject(AgeVerificationService);
   });
 
   it('should be created', () => {

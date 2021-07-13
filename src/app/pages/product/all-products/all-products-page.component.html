@@ -1,20 +1,28 @@
-<app-header></app-header>
-<div class="main-page-container">
-    <div class="content-container">
-        <app-headline 
-            [viewProductLinkVisible]="false"
-            [bigHeadlineText]="'PRODUCTS'"
-            [subtitleText]="'blah blah blah blah'"
-        ></app-headline>
-        <h2 class="product-category">FLOWERS</h2> 
-        <div class="product-grid">
-            <app-product-card 
-                class="card"
-                *ngFor="let item of items" 
-                [flower]="item">
-            </app-product-card>
+
+<div *ngIf="ageVer.userIsVerified(); else elseBlock">
+    <app-header></app-header>
+    <div class="main-page-container">
+        <div class="content-container">
+            <app-headline 
+                [viewProductLinkVisible]="false"
+                [bigHeadlineText]="'PRODUCTS'"
+                [subtitleText]="'blah blah blah blah'"
+            ></app-headline>
+            <h2 class="product-category">FLOWERS</h2> 
+            <div class="product-grid">
+                <app-product-card 
+                    class="card"
+                    *ngFor="let item of items" 
+                    [flower]="item">
+                </app-product-card>
+            </div>
+            <app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
+            <app-footer></app-footer>
         </div>
-        <app-contact-us-block [info]="'CONTACT US'"></app-contact-us-block>
-        <app-footer></app-footer>
     </div>
 </div>
+<ng-template #elseBlock>
+    <div>
+        <button (click)='ageVer.addVerificationCookie()'>I am 18+</button>
+    </div>
+</ng-template>

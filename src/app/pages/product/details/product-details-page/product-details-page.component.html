@@ -1,75 +1,82 @@
-<app-header></app-header>
-<div class="details-page-main-container">
-    <div class="details-page-content-container">
-        <div class="details-page-headline">
-            <div class="details-page-headline-photo"></div>
-        </div>
-        <div class="details-page-title-text">
-            <div class="details-page-name-thc">
-                <span>{{ item.name | uppercase }}</span>
-                <div>THC: {{ item.thc }}%</div>
+<div *ngIf="ageVer.userIsVerified(); else elseBlock">
+    <app-header></app-header>
+    <div class="details-page-main-container">
+        <div class="details-page-content-container">
+            <div class="details-page-headline">
+                <div class="details-page-headline-photo"></div>
             </div>
-            <div class="details-page-cbd-canna">
-                <span class="cbd-span">CBD: {{ item.cbd }}</span>
-                <span class="canna-span"> CANNABINOIDS: {{ item.cannaboids }}%</span>
-            </div>
-        </div>
-        <div class="analyte-container">
-            <div class="analyte-photo">
-                <span>ANALYTE</span>
-            </div>
-            <div class="analyte-table">
-                <div class="terps-chart-wrapper">
-                    <canvas baseChart 
-                        [datasets]="analyteChartData"
-                        [labels]="analyteChartLabels"
-                        [options]="analyteChartOptions"
-                        [plugins]="analyteChartPlugins"
-                        [legend]="analyteChartLegend"
-                        [chartType]="analyteChartType">
-                  </canvas>
+            <div class="details-page-title-text">
+                <div class="details-page-name-thc">
+                    <span>{{ item.name | uppercase }}</span>
+                    <div>THC: {{ item.thc }}%</div>
+                </div>
+                <div class="details-page-cbd-canna">
+                    <span class="cbd-span">CBD: {{ item.cbd }}</span>
+                    <span class="canna-span"> CANNABINOIDS: {{ item.cannaboids }}%</span>
                 </div>
             </div>
-        </div>
-        <div class="aromas-container">
-            <div class="aroma-title">
-                <span>PRIMARY AROMAS</span>
-            </div>
-            <div class="icons-row">    
-                <app-aroma-icon
-                    class='aroma-icon'
-                    *ngFor="let aroma of item.aromas"
-                    [aroma]="aroma">
-                </app-aroma-icon>
-                <div class="total-terps-text">
-                    <p>{{item.terpenes | number}} %</p>
-                    <p>TOTAL TERPENES</p>
+            <div class="analyte-container">
+                <div class="analyte-photo">
+                    <span>ANALYTE</span>
+                </div>
+                <div class="analyte-table">
+                    <div class="terps-chart-wrapper">
+                        <canvas baseChart 
+                            [datasets]="analyteChartData"
+                            [labels]="analyteChartLabels"
+                            [options]="analyteChartOptions"
+                            [plugins]="analyteChartPlugins"
+                            [legend]="analyteChartLegend"
+                            [chartType]="analyteChartType">
+                    </canvas>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="terps-chart-container">
-            <div class="terps-chart-title">
-                <span>TERPENES</span>
+            <div class="aromas-container">
+                <div class="aroma-title">
+                    <span>PRIMARY AROMAS</span>
+                </div>
+                <div class="icons-row">    
+                    <app-aroma-icon
+                        class='aroma-icon'
+                        *ngFor="let aroma of item.aromas"
+                        [aroma]="aroma">
+                    </app-aroma-icon>
+                    <div class="total-terps-text">
+                        <p>{{item.terpenes | number}} %</p>
+                        <p>TOTAL TERPENES</p>
+                    </div>
+                </div>
             </div>
-            <div class="terps-chart-table">
-                <div class="terps-chart-wrapper">
-                    <canvas baseChart 
-                        [datasets]="terpsChartData"
-                        [labels]="terpsChartLabels"
-                        [options]="terpsChartOptions"
-                        [plugins]="terpsChartPlugins"
-                        [legend]="terpsChartLegend"
-                        [chartType]="terpsChartType">
-                  </canvas>
+            <div class="terps-chart-container">
+                <div class="terps-chart-title">
+                    <span>TERPENES</span>
+                </div>
+                <div class="terps-chart-table">
+                    <div class="terps-chart-wrapper">
+                        <canvas baseChart 
+                            [datasets]="terpsChartData"
+                            [labels]="terpsChartLabels"
+                            [options]="terpsChartOptions"
+                            [plugins]="terpsChartPlugins"
+                            [legend]="terpsChartLegend"
+                            [chartType]="terpsChartType">
+                    </canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <app-contact-us-block 
+        [info]="'REQUEST INFORMATION ON ' + item.name.toUpperCase()"
+        [product_name] = 'item.name'>
+    </app-contact-us-block>
+    <app-footer></app-footer>
 </div>
-<app-contact-us-block 
-    [info]="'REQUEST INFORMATION ON ' + item.name.toUpperCase()"
-    [product_name] = 'item.name'>
-</app-contact-us-block>
-<app-footer></app-footer>
+<ng-template #elseBlock>
+    <div>
+        <button (click)='ageVer.addVerificationCookie()'>I am 18+</button>
+    </div>
+</ng-template>
 
-
+<button (click)='ageVer.clearVerificationCookie()'>Clear Cookie</button>

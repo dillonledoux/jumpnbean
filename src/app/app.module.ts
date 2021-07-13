@@ -27,6 +27,7 @@ import { BenefitItemComponent } from './benefit-item/benefit-item.component';
 import { TerpsComponent } from './sections/terps/terps.component';
 import { HeadlineComponent } from './sections/headline/headline.component';
 import { AromaIconComponent } from './aroma-icon/aroma-icon.component';
+import { AgeVerWrapperComponent } from './age-ver-wrapper/age-ver-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AromaIconComponent } from './aroma-icon/aroma-icon.component';
     TerpsComponent,
     HeadlineComponent,
     AromaIconComponent,
+    AgeVerWrapperComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../../models/product';
 import { PRODUCTS } from '../../../data/product-data';
+import { AgeVerificationService } from 'src/app/age-verification.service';
 
 @Component({
   selector: 'app-all-products-page',
@@ -9,7 +10,7 @@ import { PRODUCTS } from '../../../data/product-data';
 })
 export class AllProductsPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ageVer: AgeVerificationService) { }
 
   items : Product[];
 
