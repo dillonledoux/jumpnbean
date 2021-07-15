@@ -9,11 +9,78 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+//define custom pallette 
+$jbp-green: (
+    50 : #f0f4e5,
+    100 : #d9e3bf,
+    200 : #bfd094,
+    300 : #a5bd69,
+    400 : #92af48,
+    500 : #7fa128,
+    600 : #779924,
+    700 : #6c8f1e,
+    800 : #628518,
+    900 : #4f740f,
+    A100 : #dcffa7,
+    A200 : #c8ff74,
+    A400 : #b3ff41,
+    A700 : #a9ff28,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$jbp-purple: (
+    50 : #e8e9f3,
+    100 : #c5c8e0,
+    200 : #9fa3cb,
+    300 : #787eb6,
+    400 : #5b63a7,
+    500 : #3e4797,
+    600 : #38408f,
+    700 : #303784,
+    800 : #282f7a,
+    900 : #1b2069,
+    A100 : #a5aaff,
+    A200 : #727aff,
+    A400 : #3f49ff,
+    A700 : #2531ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$Jump-n-bean-primary: mat-palette($mat-indigo);
-$Jump-n-bean-accent: mat-palette($mat-pink, A200, A100, A400);
+$Jump-n-bean-primary: mat-palette($jbp-green);
+$Jump-n-bean-accent: mat-palette($jbp-purple);
 
 // The warn palette is optional (defaults to red).
 $Jump-n-bean-warn: mat-palette($mat-red);

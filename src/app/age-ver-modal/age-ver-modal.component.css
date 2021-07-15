@@ -12,4 +12,32 @@
     border: #7fa128 solid 10px;
     width: 50vw;
     height: 40vh;
+    padding: 5vw;
+}
+.age-ver-modal-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+.winged-cross{
+    height: auto;
+    width: 10vw;
+}
+.jumpnbean-text {
+    height: auto;
+    width: 35vw;
+}
+.text-18-to-enter {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.7rem;
+    margin: 10px 0px;
+}
+.age-ver-modal-box button{
+    margin: 20px 7vw;
 }
