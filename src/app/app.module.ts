@@ -8,7 +8,7 @@ import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactUsFormComponent } from './contact-us-form/contact-us-form.component';
+import { ContactUsFormComponent, SnackBarSuccess, SnackBarFailure  } from './contact-us-form/contact-us-form.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { HeaderComponent } from './header/header.component';
 import { FeaturedComponent } from './sections/featured/featured.component';
@@ -19,6 +19,7 @@ import { FeaturedBadgeComponent } from './featured-badge/featured-badge.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsPageComponent } from './pages/product/details/product-details-page/product-details-page.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
@@ -51,6 +52,8 @@ import { AgeVerModalComponent } from './age-ver-modal/age-ver-modal.component';
     AromaIconComponent,
     AgeVerWrapperComponent,
     AgeVerModalComponent,
+    SnackBarSuccess,
+    SnackBarFailure,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { AgeVerModalComponent } from './age-ver-modal/age-ver-modal.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
+    MatSnackBarModule,
     FontAwesomeModule,
     ChartsModule,
   ],

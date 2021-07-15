@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PostService } from '../post.service';
-import { MAT_FORM_FIELD, MatFormField, MatFormFieldControl } from '@angular/material/form-field';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Contact } from '../models/contact';
 
@@ -17,9 +17,17 @@ export class ContactUsFormComponent implements OnInit {
   newContact:Contact;
   submission:boolean;
   success:string;
+  durationInSeconds = 4;
   @Input() product: string = "general request";
 
-  constructor( private postService:PostService ) { }
+  constructor( private postService:PostService,
+               private _snackBar: MatSnackBar ) { }
+
+  openSnackBarSuccess() {
+  this._snackBar.openFromComponent(SnackBarSuccess, {
+    duration: this.durationInSeconds * 1000,
+  });
+}
 
   ngOnInit(): void {
     this.success = `{"result": "Success."}`;
@@ -61,10 +69,39 @@ export class ContactUsFormComponent implements OnInit {
       }
       else{
         this.submission = true;
+        this.openSnackBarSuccess();
       }
       //console.log(this.submission);
     });
   }
 
 }
-//[disabled]="!form.valid"
+@Component({
+  selector: 'snack-bar-component-success',
+  template: `
+    <span class='snack-bar-success'>
+      Request received! We will be in contact.
+    </span>
+  `,
+  styles: [`
+    .snack-bar-success {
+      color: white;
+    }
+  `],
+})
+export class SnackBarSuccess {}
+
+@Component({
+  selector: 'snack-bar-component-failure',
+  template: `
+    <span class='snack-bar-failure'>
+      Request failed! Please try again later.
+    </span>
+  `,
+  styles: [`
+    .snack-bar-failure {
+      color: red;
+    }
+  `],
+})
+export class SnackBarFailure{}

@@ -9,3 +9,6 @@
 form {
     color: white;
 }
+mat-form-field {
+    padding: 10px;
+}
