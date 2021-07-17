@@ -24,6 +24,26 @@ export class ProductDetailsPageComponent {
     maintainAspectRatio: false,
     legend: {
       display: false,
+    },
+    title: {
+      display: true,
+      text: "Cannaboid Analysis",
+    },
+    scales: {
+      xAxes: [{
+        ticks: {
+          callback: function(value, index, values) {
+            return value + '%';
+          }
+        }
+      }]
+    },
+    tooltips: {
+      callbacks: {
+        label: function(context) {
+          return context.value+'%';
+        }
+      }
     }
   };
   analyteChartLabels: Label[];
@@ -38,6 +58,26 @@ export class ProductDetailsPageComponent {
     maintainAspectRatio: false,
     legend: {
       display: false,
+    },
+    title: {
+      display: true,
+      text: "Terpene Analysis",
+    },
+    scales: {
+      xAxes: [{
+        ticks: {
+          callback: function(value, index, values) {
+            return value + '%';
+          }
+        }
+      }]
+    },
+    tooltips: {
+      callbacks: {
+        label: function(context) {
+          return context.value+'%';
+        }
+      }
     }
   };
   terpsChartType: ChartType = 'horizontalBar';
@@ -59,7 +99,8 @@ export class ProductDetailsPageComponent {
     this.analyteChartData = [
       {
         data: this.item.analyte_cann_results,
-        backgroundColor: 'green'
+        backgroundColor: '7fa128',
+        hoverBackgroundColor: '3e4797',
       }
     ] as ChartDataSets[];
 
@@ -68,7 +109,8 @@ export class ProductDetailsPageComponent {
     this.terpsChartData = [
       { 
         data: this.item.analyte_terp_results,
-        backgroundColor: 'green' 
+        backgroundColor: '7fa128',
+        hoverBackgroundColor: '3e4797',
       }
     ] as ChartDataSets[];
     
