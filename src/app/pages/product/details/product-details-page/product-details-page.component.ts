@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../../../../models/product';
 import { PRODUCTS } from '../../../../data/product-data';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 import { AgeVerificationService } from 'src/app/age-verification.service';
+import { isNgTemplate } from '@angular/compiler';
+import * as Chart from 'chart.js';
+
 
 @Component({
   selector: 'app-product-details-page',
@@ -12,11 +15,10 @@ import { AgeVerificationService } from 'src/app/age-verification.service';
   styleUrls: ['./product-details-page.component.css']
 })
 
-export class ProductDetailsPageComponent implements OnInit {
+export class ProductDetailsPageComponent {
 
   name: string;
   item: Product;
-
   analyteChartOptions: ChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
@@ -24,17 +26,13 @@ export class ProductDetailsPageComponent implements OnInit {
       display: false,
     }
   };
-  analyteChartLabels: Label[] = ['2015', '2016', '2017', '2018', '2019', '2020'];
+  analyteChartLabels: Label[];
   analyteChartType: ChartType = 'horizontalBar';
   analyteChartLegend = true;
   analyteChartPlugins = [];
-  analyteChartData: ChartDataSets[] = [
-    { 
-      data: [65, 67, 70, 75, 80, 90],
-      backgroundColor: 'green' 
-    },
-  ];
+  analyteChartData: ChartDataSets[];
   
+
   terpsChartOptions: ChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
@@ -42,30 +40,44 @@ export class ProductDetailsPageComponent implements OnInit {
       display: false,
     }
   };
-  terpsChartLabels: Label[] = ['2015', '2016', '2017', '2018', '2019', '2020'];
   terpsChartType: ChartType = 'horizontalBar';
   terpsChartLegend = true;
   terpsChartPlugins = [];
-  terpsChartData: ChartDataSets[] = [
-    { 
-      data: [65, 67, 70, 75, 80, 90],
-      backgroundColor: 'green' 
-    },
-  ];
+  terpsChartLabels: Label[];
+  terpsChartData: ChartDataSets[];
 
   constructor(
     private route: ActivatedRoute,
     public ageVer: AgeVerificationService
-  ) {}
-
-  ngOnInit(): void {
+  ) {
     this.route.paramMap.subscribe(params => {
       this.name = params.get('name');
+      this.item = this.returnItemByName(this.name, PRODUCTS);
     });
 
-    this.item = this.returnItemByName(this.name, PRODUCTS);
-    console.log(this.item);
+    this.analyteChartLabels = this.item.analyte_cann_labels as Label[];
+    this.analyteChartData = [
+      {
+        data: this.item.analyte_cann_results,
+        backgroundColor: 'green'
+      }
+    ] as ChartDataSets[];
+
+    this.terpsChartLabels = this.item.analyte_terp_labels as Label[];
+  
+    this.terpsChartData = [
+      { 
+        data: this.item.analyte_terp_results,
+        backgroundColor: 'green' 
+      }
+    ] as ChartDataSets[];
+    
   }
+
+  
+  
+  
+
   
   returnItemByName(name:string, list:Product[]): Product {
     return list.find( element => element.name == name );

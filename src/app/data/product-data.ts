@@ -1,15 +1,23 @@
+import { Analyte } from '../models/analysis-result';
 import { Product } from '../models/product';
+
+//analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+//analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene', 'α-Terpinene', 'Camphene', 'cis-Ocimene', 'δ-3-Carene', 'Eucalyptol', 'γ-Terpinene', 'Geraniol', 'Guaiol', 'Isopulegol', 'p-Cymene', 'trans-Nerolidol'],
 
 export const PRODUCTS: Product[] = [
     {
-        name: 'Marshmello OG',
-        thc: 10.2,
-        cbd: 17.5,
-        cannaboids: 20.1,
+        name: 'Crescendo RBx1',
+        thc: 30.85,
+        cbd: 0.0,
+        cannaboids: 35.18,
         info: 'lorem ipsum...',
-        photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg',
-        aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        photo: 'assets/images/product-photos/Crescendo-RBX1.jpg',
+        aromas: ['hops', 'cinnamon', 'pine', 'orange', 'lavender'],
+        terpenes: 2.95,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Stinky OG',
@@ -19,7 +27,11 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F1.JPG',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Skunky OG',
@@ -29,7 +41,11 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Stinky OG',
@@ -39,7 +55,11 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Marshmello OG',
@@ -49,7 +69,11 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Stinky OG',
@@ -59,7 +83,11 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     },
     {
         name: 'Stinky OG',
@@ -69,6 +97,10 @@ export const PRODUCTS: Product[] = [
         info: 'lorem ipsum...',
         photo: 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/white-daisy.jpg',
         aromas: ['hops', 'orange', 'cinnamon', 'lavender', 'pine'],
-        terpenes: 16239.76
+        terpenes: 16239.76,
+        analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ9-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
+        analyte_cann_results:   [35.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        analyte_terp_labels: ['β-Myrcene', 'β-Caryophyllene', 'α-Pinene', 'δ-Limonene', 'Linalool', 'α-Humulene', 'α-Bisabolol', 'β-Pinene', 'trans-Ocimene', 'Caryophyllene Oxide', 'cis-Nerolidol', 'Terpinolene'],
+        analyte_terp_results: [1.51, 0.36, 0.28, 0.28, 0.15, 0.14, 0.07, 0.06, 0.06, 0.02, 0.01, 0.01],
     }
 ];
