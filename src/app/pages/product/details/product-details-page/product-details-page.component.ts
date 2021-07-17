@@ -116,11 +116,6 @@ export class ProductDetailsPageComponent {
     
   }
 
-  
-  
-  
-
-  
   returnItemByName(name:string, list:Product[]): Product {
     return list.find( element => element.name == name );
   }
