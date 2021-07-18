@@ -4,6 +4,7 @@
     justify-content: space-around;
 }
 .featured-products-headline{
+    width: 100%;
     color: white;
     /* font-size: 2.5rem; */
     
@@ -13,6 +14,7 @@
 }
 .featured-badge-item{
     width: 20%;
+    height: auto;
     flex: 30%;
     padding: 0 10px;
 }
