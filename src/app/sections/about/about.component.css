@@ -15,15 +15,45 @@
     max-width: 50vw;
 }
 .about-section-text-div{
-    padding: 1vw 4vw;
+    padding: 20px 25px;
 }
 .about-section-text-div h2{
     color: #7FA128;
     font-weight: bold;
-    font-size: 5vw;
-    line-height: 5vw;
+
 }
 .about-section-text-div p{
     color: white;
-    font-size: 0.75rem;
+    font-size: 20px;
+}
+a:hover {
+    color: #7FA128;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+@media(max-width:1024px){
+    .about-section-text-div h2{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .about-section-text-div p{
+        font-size: 2vw;
+    }
+}
+
+@media(min-width:1024px){
+    .about-section-text-div h2{
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .about-section-text-div p{
+        font-size: 20px;
+    }
 }
