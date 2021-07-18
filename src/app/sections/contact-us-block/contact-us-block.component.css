@@ -1,4 +1,6 @@
 .contact-us-block-container{
+    box-shadow: 30px 0 200px 60px inset black;
+
     background-image: url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
     background-size: cover;
     padding: 10px 50px;
