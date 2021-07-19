@@ -12,3 +12,6 @@ form {
 mat-form-field {
     padding: 10px;
 }
+p button {
+    text-align: center;
+}

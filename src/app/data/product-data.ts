@@ -67,7 +67,7 @@ export const PRODUCTS: Product[] = [
         cannaboids: 41.01,
         info: 'First Class Funk is a slightly indica dominant hybrid strain (60% indica/40% sativa) created through crossing the delicious GMO X Jet Fuel strains. Named for its super heavy stench, First Class Funk brings on classic indica effects with a high level of potency.',
         photo: 'assets/images/product-photos/First-Class-Funk.png',
-        aromas: ['hops', 'orange', 'cinnamon', 'pine', 'pine'],
+        aromas: ['hops', 'orange', 'cinnamon', 'pine',],
         terpenes: 3.08,
         analyte_cann_labels:    ['THCa', 'Δ9-THC', 'Δ8-THC', 'THCV', 'CBDa', 'CBD', 'CBDV', 'CBN', 'CBGa', 'CBG', 'CBC'],
         analyte_cann_results:   [37.20, 0, 0, 0, 0, 0, 0, 0, 3.59, 0.22, 0],
@@ -200,4 +200,11 @@ export const PRODUCTS: Product[] = [
         analyte_terp_labels: ['β-Myrcene','β-Caryophyllene','δ-Limonene','α-Bisabolol', 'Linalool','α-Humulene','β-Pinene','α-Pinene','Caryophyllene Oxide',],
         analyte_terp_results: [0.90, 0.29, 0.11, 0.10, 0.10, 0.08, 0.03, 0.02, 0.01,],
     }
+];
+
+export const FEATURED_ITEMS: string[] = [
+    'First Class Funk',
+    'Peanut Butter Breath',
+    'Kush Mint',
+    'Banana Hammock',
 ];

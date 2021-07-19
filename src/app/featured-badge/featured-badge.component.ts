@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FeaturedItem } from '../models/FeaturedItem';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-featured-badge',
@@ -8,7 +8,7 @@ import { FeaturedItem } from '../models/FeaturedItem';
 })
 export class FeaturedBadgeComponent implements OnInit {
 
-  @Input() item:FeaturedItem;
+  @Input() item:Product;
   
   constructor() { }
 
