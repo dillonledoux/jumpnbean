@@ -163,7 +163,7 @@ export const PRODUCTS: Product[] = [
         thc: 33.27,
         cbd: 0,
         cannaboids: 39.33,
-        info: 'NEED',         
+        info: 'Sativa dominant strain, high THC content with long lasting effects.  Extremely gaseous taste that elevates to a different level.  Medicine that keeps you motivated.',         
         photo: 'assets/images/product-photos/Dubble-Headed.png',
         aromas: [ 'hops','orange','cinnamon','lavender', 'pine'],
         terpenes: 2.72,
