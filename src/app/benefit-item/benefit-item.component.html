@@ -2,6 +2,9 @@
     <div class="benefit-item-text-div">
         <h1>{{item_info.name}}</h1>
         <p>{{item_info.desc}}</p>
+        <div class="benefit-item-photo-div" *ngIf='item_info.photo'>
+            <img src="{{item_info.photo}}" alt="">
+        </div>
     </div>
     <a class="benefits-learn-more-link" href="{{item_info.link}}">LEARN MORE</a>
 </div>

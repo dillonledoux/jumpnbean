@@ -6,7 +6,7 @@
     align-items: center;
 }
 .benefit-item-text-div{
-    color: orange;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,15 @@ a:link {
     padding: 7px 30px;
     background-color: white;
     font-weight: bold;
-    color: darkslateblue;
+    color: #3e4797;
     border-radius: 25px;
+}
+.benefit-item-photo-div img{
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 90vw;
+}
+.benefit-item-photo-div {
+    margin-bottom: 15px;
 }
