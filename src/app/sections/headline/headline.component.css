@@ -1,9 +1,18 @@
 .home-page-headline{
     width: 100%;
     height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+.black-spacer{
+    width: 50vw;
+    height: 100%;
 }
 
 .headline-text-block{
+    position:absolute;
+    top: 175px;
+    left: 0px;
     color: white;
     display: flex;
     flex-direction: column;

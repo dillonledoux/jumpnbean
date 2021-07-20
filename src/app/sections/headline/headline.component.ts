@@ -11,6 +11,7 @@ export class HeadlineComponent implements OnInit {
   @Input() subtitleText: string;
   @Input() viewProductLinkVisible: boolean;
   @Input() logoVisible: boolean;
+  @Input() backgroundPhotoLink: string;
   
   constructor() { }
 
