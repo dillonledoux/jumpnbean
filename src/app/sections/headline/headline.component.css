@@ -10,7 +10,7 @@
 }
 
 .headline-text-block{
-    position:absolute;
+    position: absolute;
     top: 175px;
     left: 0px;
     color: white;
@@ -33,6 +33,7 @@
     min-width: 240px;
     height: 30%;
     margin-bottom: 3%;
+    max-width: 564px;
 
 }
 .home-page-title img{
