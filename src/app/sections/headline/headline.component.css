@@ -3,15 +3,17 @@
     height: 450px;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .black-spacer{
-    width: 50vw;
+    width: 40%;
     height: 100%;
 }
 
 .headline-text-block{
     position: absolute;
-    top: 175px;
+    top: 100px;
+    
     left: 0px;
     color: white;
     display: flex;
@@ -73,13 +75,13 @@
 }
 
 .home-page-headline-photo{
-    width: 100%;
+    width: 5000px;
     height: 100%;
     box-shadow: 30px 0 200px 60px inset black;
-    background-image: url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
     background-size: cover;  
     display: flex;
     align-items: center;
+    background: linear-gradient(to left, transparent, black), url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
 }
 
 a:hover {

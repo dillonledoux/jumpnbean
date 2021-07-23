@@ -1,13 +1,13 @@
 <div class="home-page-headline">
     <div class='black-spacer'></div>
-    <div class="home-page-headline-photo">
-        <div class="headline-text-block">
-            <div *ngIf="(!bigHeadlineText && logoVisible)" class = 'home-page-title'>
-                <img src="assets/images/Jump-n-bean%20pharms-2.png">
+        <div class="home-page-headline-photo">
+            <div class="headline-text-block">
+                <div *ngIf="(!bigHeadlineText && logoVisible)" class = 'home-page-title'>
+                    <img src="assets/images/Jump-n-bean%20pharms-2.png">
+                </div>
+                <h1 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h1>
+                <p class="home-page-description">{{subtitleText}}</p>
+                <a *ngIf="viewProductLinkVisible" class="headline-view-products-link" routerLink="/products" routerLinkActive="active">VIEW PRODUCTS</a>
             </div>
-            <h1 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h1>
-            <p class="home-page-description">{{subtitleText}}</p>
-            <a *ngIf="viewProductLinkVisible" class="headline-view-products-link" routerLink="/products" routerLinkActive="active">VIEW PRODUCTS</a>
         </div>
-    </div>
 </div>
