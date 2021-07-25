@@ -1,9 +1,11 @@
 .main-page-container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
 }
 .content-container {
+    width: 100%;
     display: flex;
     height: auto;
     flex-direction: column;
