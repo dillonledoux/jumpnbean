@@ -5,7 +5,7 @@
                 <div *ngIf="(!bigHeadlineText && logoVisible)" class = 'home-page-title'>
                     <img src="assets/images/Jump-n-bean%20pharms-2.png">
                 </div>
-                <h1 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h1>
+                <h2 *ngIf="bigHeadlineText" class="big-headline-text">{{bigHeadlineText}}</h2>
                 <p class="home-page-description">{{subtitleText}}</p>
                 <a *ngIf="viewProductLinkVisible" class="headline-view-products-link" routerLink="/products" routerLinkActive="active">VIEW PRODUCTS</a>
             </div>

@@ -4,13 +4,12 @@
     justify-content: space-around;
 }
 .featured-products-headline{
-    width: 100%;
+    width: 50%;
     color: white;
-    /* font-size: 2.5rem; */
-    
     font-weight: bold;
     margin-left: 2.5%;
-    margin-top: 4%;
+    padding-bottom: 12px;
+    padding-top: 30px;
 }
 .featured-badge-item{
     width: 20%;

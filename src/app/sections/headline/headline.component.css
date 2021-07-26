@@ -9,18 +9,16 @@
     width: 40%;
     height: 100%;
 }
-
 .headline-text-block{
     position: absolute;
     top: 100px;
-    
     left: 0px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-end;
-    width: 100%;
+    width: 80%;
     height: auto;    
     text-align: left;
     padding-left: 10%;
@@ -31,7 +29,7 @@
 }
 
 .home-page-title {
-    width: 55%;
+    width: 65%;
     min-width: 240px;
     height: 30%;
     margin-bottom: 3%;
@@ -103,4 +101,5 @@ a:link {
 }
 .big-headline-text{
     font-weight: bolder;
+    font-size: 60px;
 }

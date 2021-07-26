@@ -1,10 +1,14 @@
 .about-section-container{
     background-color: black;
-    width: 100%;
-    height: 350px;
+    width: 85%;
+    height: 400px;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding: 5% 0px;
 }
 .about-section-image-div{
     height: 100%;
@@ -16,6 +20,7 @@
     max-width: 50vw;
 }
 .about-section-text-div{
+    justify-self: self-end;
     padding: 20px 25px;
 }
 .about-section-text-div h2{
@@ -55,7 +60,7 @@ a{
         line-height: 55px;
     }
     .about-section-text-div p{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 28px;
     }
 }

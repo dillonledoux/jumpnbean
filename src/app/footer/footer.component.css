@@ -5,7 +5,9 @@
     padding-left: 2vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    width: 100%;
+    width: 95%;
+    margin: auto;
+    max-width: 1024px;
     height: auto;
     justify-content: space-between;
 }
