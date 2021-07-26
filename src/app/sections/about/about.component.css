@@ -1,36 +1,33 @@
 .about-section-container{
-    background-color: black;
+    margin: auto;
+    padding: 20px 0px;
+    color: white;
     width: 85%;
-    height: 400px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    padding: 5% 0px;
+    justify-content: space-around;
+    overflow: hidden;
 }
-.about-section-image-div{
-    height: 100%;
+.about-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;    
 }
-.about-section-image-div img{
-    object-fit: cover;
-    height: 100%;
-    width: auto;
-    max-width: 50vw;
-}
-.about-section-text-div{
-    justify-self: self-end;
-    padding: 20px 25px;
-}
-.about-section-text-div h2{
+.about-section-text h2{
     color: #7FA128;
     font-weight: bold;
-
 }
-.about-section-text-div p{
-    color: white;
-    font-size: 20px;
+.about-section-photo{
+    height: auto;
+    display: flex;
+    width: 85%;
+    margin-top: 20px;
+}
+.about-section-photo img{
+    object-fit: cover;
+    width: 90%;
+    margin: auto;
 }
 a:hover {
     color: #7FA128;
@@ -41,25 +38,56 @@ a:visited {
 a:link {
     text-decoration: none;
 }
+.about-learn-more-link {
+    margin: 5px 0px;
+    padding: 7px 30px;
+    background-color: white;
+    font-weight: bold;
+    color: #3e4797;
+    border-radius: 25px;
+}
+a:hover {
+    color: #3e4797;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
 a{
-    color: white;
+    color: #7FA128;
 }
-@media(max-width:1024px){
-    .about-section-text-div h2{
-        font-size: 5vw;
-        line-height: 5vw;
+@media(max-width:700px){
+    .about-section-container{
+        flex-direction: column; 
     }
-    .about-section-text-div p{
-        font-size: 2.25vw;
+    .about-section-text{
+        max-width: 100%;
+    }
+    .about-section-text h2{
+        font-size: 8vw;
+        line-height: 8vw;
+        text-align: center;
+    }
+    .about-section-text p{
+        font-size: 4vw;
+        line-height: 4vw;
+        text-align: justify;
     }
 }
-
-@media(min-width:1024px){
-    .about-section-text-div h2{
+@media(min-width:700px){
+    .about-section-container{
+        flex-direction: row;
+    }
+    .about-section-text{
+        max-width: 40%;
+    }
+    .about-section-text h2{
         font-size: 55px;
         line-height: 55px;
     }
-    .about-section-text-div p{
+    .about-section-text p{
         font-size: 22px;
         line-height: 28px;
     }
