@@ -17,6 +17,7 @@
             </div>
             <div class="analyte-container">
                 <div class="analyte-photo">
+                    <img src="{{item.photo}}" alt="{{item.name}} photo">
                     <span>ANALYTE</span>
                 </div>
                 <div class="analyte-table">
@@ -43,7 +44,7 @@
                         [aroma]="aroma">
                     </app-aroma-icon>
                     <div class="total-terps-text">
-                        <p>{{item.terpenes | number}} %</p>
+                        <p><strong>{{item.terpenes | number}} %</strong></p>
                         <p>TOTAL TERPENES</p>
                     </div>
                 </div>

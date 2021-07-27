@@ -101,5 +101,14 @@ a:link {
 }
 .big-headline-text{
     font-weight: bolder;
-    font-size: 60px;
+}
+@media(max-width:375px){
+    .big-headline-text{
+        font-size: 48px;
+    }
+}
+@media(min-width:375px){
+    .big-headline-text{
+        font-size: 60px;
+    }
 }
