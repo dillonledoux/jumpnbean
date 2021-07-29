@@ -9,7 +9,7 @@ export class AromaIconComponent implements OnInit {
   
   @Input() aroma: string;
 
-  readonly url = 'https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/icons/';
+  readonly url = 'assets/images/icons/';
   link: string;
 
   constructor() { }

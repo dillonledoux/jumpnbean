@@ -1,10 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { PostService } from '../post.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Contact } from '../models/contact';
-
 
 @Component({
   selector: 'app-contact-us-form',
@@ -24,10 +23,16 @@ export class ContactUsFormComponent implements OnInit {
                private _snackBar: MatSnackBar ) { }
 
   openSnackBarSuccess() {
-  this._snackBar.openFromComponent(SnackBarSuccess, {
-    duration: this.durationInSeconds * 1000,
-  });
-}
+    this._snackBar.openFromComponent(SnackBarSuccess, {
+      duration: this.durationInSeconds * 1000,
+    });
+  }
+
+  openSnackBarFailure() {
+    this._snackBar.openFromComponent(SnackBarFailure, {
+      duration: this.durationInSeconds * 1000,
+    });
+  }
 
   ngOnInit(): void {
     this.success = `{"result": "Success."}`;
@@ -58,24 +63,24 @@ export class ContactUsFormComponent implements OnInit {
   }
 
   onSubmit(): void {
+    if(!this.product){
+      this.product = "Product not provided."
+    }
     this.newContact = new Contact(this.form.controls.name.value, this.form.controls.email.value, this.form.controls.phone.value, this.form.controls.city.value, this.form.controls.description.value, this.product);
-    console.log(this.newContact);
-
     this.postService.contactUsPost(this.newContact).subscribe(data => {
-      //console.log(data);
       
       if(data == null || data.errorType ){
         this.submission = false
+        this.openSnackBarFailure();
       }
       else{
         this.submission = true;
         this.openSnackBarSuccess();
       }
-      //console.log(this.submission);
     });
   }
-
 }
+
 @Component({
   selector: 'snack-bar-component-success',
   template: `
@@ -85,7 +90,7 @@ export class ContactUsFormComponent implements OnInit {
   `,
   styles: [`
     .snack-bar-success {
-      color: white;
+      color: seagreen;
     }
   `],
 })
