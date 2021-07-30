@@ -79,7 +79,7 @@
     background-size: cover;  
     display: flex;
     align-items: center;
-    background: linear-gradient(to left, transparent, black), url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/images/F2.JPG");
+    background: linear-gradient(to left, transparent, black), url("https://s3.amazonaws.com/www.jumpnbeanpharms.net/assets/images/F2.JPG");
 }
 
 a:hover {
