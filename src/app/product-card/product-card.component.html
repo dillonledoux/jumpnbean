@@ -1,7 +1,9 @@
 <div class="product-card">
     <div class="content-container">
         <div class="product-pic">
-            <img src={{flower.photo}} alt="">
+            <a [routerLink]="['/products', flower.name]"> 
+                <img src={{flower.photo}} alt="Flower Photo">
+            </a>
         </div>
         <div class="product-info">
             <h3 class="product-title">{{flower.name}}</h3>
