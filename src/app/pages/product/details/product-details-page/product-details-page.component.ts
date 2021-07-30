@@ -99,8 +99,8 @@ export class ProductDetailsPageComponent {
     this.analyteChartData = [
       {
         data: this.item.analyte_cann_results,
-        backgroundColor: '7fa128',
-        hoverBackgroundColor: '3e4797',
+        backgroundColor: '#7fa128',
+        hoverBackgroundColor: '#3e4797',
       }
     ] as ChartDataSets[];
 
@@ -109,8 +109,8 @@ export class ProductDetailsPageComponent {
     this.terpsChartData = [
       { 
         data: this.item.analyte_terp_results,
-        backgroundColor: '7fa128',
-        hoverBackgroundColor: '3e4797',
+        backgroundColor: '#7fa128',
+        hoverBackgroundColor: '#3e4797',
       }
     ] as ChartDataSets[];
     
